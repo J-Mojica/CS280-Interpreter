@@ -1,0 +1,6 @@
+PROGRAM circle
+    !Program with no errors
+	!Variables declarations only
+	REAL : r, a, p, b 	
+	CHAR : str1, str2
+END PROGRAM circle

@@ -1,0 +1,18 @@
+PROGRAM circle
+	!Variable declarations
+	REAL :: x1, y1, x2, y2, 2x3, y3, a, b, r	
+	CHAR :: str1, str2
+	INTEGER:: x,y,z
+	!Read data
+	PRINT *, "Please type the coordinates of three points"
+	READ*, x1, y1, r, str1, str2
+	a = (2 * 3.14) * r * r
+	b = -2.1234
+	IF ( r < 5)
+	  b = -1
+	END IF
+	str1 = str2 // str1
+	!Display the results
+	PRINT *, "The output results are " , str1, x1, y1
+END PROGRAM circle
+               

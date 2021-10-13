@@ -2,8 +2,8 @@
  * lex.h
  *
  * CS280
- * Fall 2020
- */
+ * Spring 2021
+*/
 
 #ifndef LEX_H_
 #define LEX_H_
@@ -11,9 +11,7 @@
 #include <string>
 #include <iostream>
 #include <map>
-
 using namespace std;
-
 
 //Definition of all the possible token types
 enum Token {
@@ -23,7 +21,7 @@ enum Token {
 		// an identifier
 	IDENT,
 
-		// an integer and string constant
+		// an integer, real, and string constant
 	ICONST, RCONST, SCONST, 
 
 		// the operators, parens, semicolon
@@ -109,7 +107,6 @@ public:
 	string	GetLexeme() const { return lexeme; }
 	int	GetLinenum() const { return lnum; }
 };
-
 
 
 

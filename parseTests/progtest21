@@ -1,0 +1,11 @@
+PROGRAM circle
+    !Missing a Comma in print statement
+	!Variable declarations
+	INTEGER : r, a, p, b 	
+	CHAR : str1, str2
+	!Read data
+	PRINT  "Please enter two radius values for circles"
+	READ, r, b
+	!Display the results
+	PRINT , "The output results are " , a+4, p*2, -b
+END PROGRAM circle

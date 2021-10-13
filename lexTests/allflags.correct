@@ -1,0 +1,17 @@
+Lines: 26
+Tokens: 126
+STRINGS:
+Its radius is 
+Please type the coordinates of three points
+The center of the circle through these points is
+INTEGERS:
+0
+1
+2
+5
+REALS:
+1.5
+2.1234
+3.14
+IDENTIFIERS:
+A, B, C, CIRCLE, EQUATION, OF, R, STR1, STR2, THE, X, X1, X2, X3, Y, Y1, Y2, Y3, Z

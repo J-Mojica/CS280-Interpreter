@@ -1,0 +1,11 @@
+PROGRAM circle
+    !Undeclared Variable
+	!Variable declarations
+	INTEGER : r, a, p, b 	
+	CHAR : str1, str2
+	!Read data
+	PRINT , "Please the two radius values circle"
+	READ, r, b
+	!Display the results
+	PRINT , "The output results are " , z+4, p*2, -b
+END PROGRAM circle
