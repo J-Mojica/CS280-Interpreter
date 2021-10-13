@@ -7,7 +7,7 @@ The interpreter consists of two programs: the [Lexical Analyzer](/lex.cpp) and t
 
 The Lexical Analyzer's job is to get tokens for the Parser to utilize. Each token can correspond to a keyword, an operator, a terminal of the language, or an error. The Lexical Analyzer reads one character at a time from an input stream provided by the Parser, ignoring white space until it either recognizes a valid token or it encounters an error. The tokens sent to the Parser are instances of a wrapper class called LexItem, which allows one to store the line number where the token was generated and the string corresponding to it's lexeme. 
 
-[Lexical Analyzer](/lex.cpp) | [Lexical Analyzer Tester Program](/lexTester.cpp) | [Lexical Analyzer Test Files](/lexTest/)
+\[ [Lexical Analyzer](/lex.cpp) | [Lexical Analyzer Tester Program](/lexTester.cpp) | [Lexical Analyzer Test Files](/lexTests/) \]
 
 ## Parser
 
@@ -25,7 +25,7 @@ The Parser uses the lexical analyzer to get tokens through a function called `ge
 
 The parsing status is dependent on the return value of the last non-terminal function called during the parsing process. If any of the non-terminals' function returns `false` then the parsing process is stopped. However all statements that were successfully parsed up until that point are executed.
 
-[Parser/Interpreter](/parseInt.cpp) | [Parser/Interpreter Tester Program](/parseTester.cpp) | [Parser/Interpreter Test Files](/parseTest/)
+\[ [Parser/Interpreter](/parserInt.cpp) | [Parser/Interpreter Tester Program](/parserTester.cpp) | [Parser/Interpreter Test Files](/parserTests/) \]
 ## Grammar of the language
 
 ```
@@ -46,4 +46,20 @@ Sign = + | -
 Factor = IDENT | ICONST | RCONST | SCONST | (Expr)
 ```
 
-This was a project for the CS 280 Programming Language Concepts course at the New Jersey Institute of Technology in the Spring 2021 Semester. The instructor was Dr. Bassel Arafeh. The grammar of the language, all header files (.h files), test files, and (val.cpp)[/val.cpp] were provided by the instructor.
+## Example Program ([progtest2](/parserTests/progtest2))
+The following is an example of a program that follows the grammar rules above and is successfully parsed and interpreted.
+```
+PROGRAM circle
+    !Program with no errors
+	!Variable declarations
+	INTEGER : r, a, p, b 	
+	CHAR : str1, str2
+	!Read data
+	PRINT , "Please the two radius values circle"
+	READ, r, b
+	!Display the results
+	PRINT , "The output results are " , a+4, p*2, -b
+END PROGRAM circle
+```
+---
+This was a project for the CS 280 Programming Language Concepts course at the New Jersey Institute of Technology during the Spring 2021 Semester. The instructor was Dr. Bassel Arafeh. The grammar of the language, all header files (`.h` files), test files, and [`val.cpp`](/val.cpp) were provided by the instructor.
